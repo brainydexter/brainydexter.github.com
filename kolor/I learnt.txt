@@ -1,0 +1,3 @@
+These are things with which the html needs to be updated with:
+
+- Return object from a function : Return Value optimization (http://stackoverflow.com/questions/2616107/returning-object-from-function)

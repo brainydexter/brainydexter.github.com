@@ -1,0 +1,57 @@
+body{ background-color: gray;}
+table.bodytext { color: white; font-family: Tahoma;}
+img.imageLink{
+			border: 0;
+			}
+p.header {
+		font-size: xx-large;
+		font-weight: 400;
+		}
+td.resHeader { 
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			 }
+a.pagelink{
+			color: goldenrod;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: large;
+		}
+
+a:link {
+		color: yellow;
+		}
+a:visited{
+		
+		}
+
+a.gameTitle{  
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: medium;
+			text-decoration: none;
+			}
+			
+div#projectTitle{  
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: large;
+			}
+a.question{
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: large;
+			text-decoration: none;
+			}
+			
+a.subQuestion{
+			color: maroon;
+			font-weight: bold;
+			background-color: BlueAlice;
+			font-size: medium;
+			text-decoration: none;
+			}

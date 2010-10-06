@@ -1,0 +1,76 @@
+fly2priyank@gmail.com		Priyank Jain		9519 D University Terrace
+(Mobile) +1-732-824-3479				Charlotte, NC USA
+
+
+Career Objective
+I am driven by the desire to develop games which gives me an opportunity to work with people from varied backgrounds 
+and in-turn learn something new every time, both personally and professionally. 
+
+
+Game Projects
+*	Kolor (PC) (In progress)									http://webpages.uncc.edu/~pjain6/projects.html#Kolor
+	- 3D First Person Shooter using C++/OpenGL, Qt for UI & OpenGL Mathematics library
+	- Unique Game mechanic of claiming enemies by Colouring
+	- Custom collada-DAE importer for importing 3D models
+	- Custom Frame Transformation classes
+
+*	Juhuligan (PC) 												http://webpages.uncc.edu/~pjain6/projects.html#Juhuligan
+	- Side scrolling 2D-Arcade game (inspired by Mario) using C# and XNA
+	- Re-usable object oriented architecture and components
+	- Game State management exploiting State design pattern & finite state automata 
+	- Dynamically changing Face expression on HUD representing current health using Bezier curves
+
+*	Revenge of the Tanks (PC)									http://webpages.uncc.edu/~pjain6/projects.html#ROT
+	- Turn based 2D game (inspired by Scorched Earth) using C++/OpenGL, Qt for UI & OpenGL Mathematics lib
+	- Destroyable landscape using pixel-based collision detection
+	- Tank AI is based on Finite State machines
+
+	
+Education
+*	University of North Carolina, Charlotte(USA) 
+	MS in Computer Science					GPA: 3.67/4.00
+	(Game Design & Development)				May 2010
+
+*	U.P. Technical University, Lucknow(India)
+	BS in Computer Science 
+	(Software Development)					July 2006
+
+	
+Graduate Coursework
+*	High Dynamic Range Images
+	- Implemented the High Dynamic range algorithm to retrieve the original color response function for the given photographic scene using Matlab
+	- Final result closely resembled the natural scene and lighting conditions
+
+*	Racquet Ball game
+	- Simulated experience of a Racquet ball game using the CAVE Virtual Reality technology
+	- Player body tracked with head mounted tracking using C++ and OpenScenegraph
+
+	
+Employment
+*	University of North Carolina, Charlotte(USA)					July 2009 – Present
+	Role: Research Assistant
+	- Reconstruct terrain-surface from a point cloud using Marching Triangle Algorithm using C++ & CGAL library
+	- Implemented Delaunay Triangulation constraint
+	- Implemented renderer to view the CGAL Polyhedron model
+	- Exposure to Computational Geometry concepts such as Polyhedron and half-edge data structure
+
+*	3i Infotech, India												Nov 2007 – Feb 2008
+	Role: Software Engineer
+	- Communicated technical concepts to non-technical managers
+	- Interacted, interviewed, and gathered functional user-requirements from client
+	- Reviewed System Requirements Specifications
+
+
+*	Satyam Computers, India											Oct 2006 – Apr 2007
+	Role: Software Engineer
+	- Developed conceptual prototype in J2EE technologies for an automotive sector client
+	- Underwent training in PL/SQL, Informatica ETL and ASP.NET (C#)
+
+*	Ministry of Information Technology, Govt. of India				Jan 2005 – Jun 2006
+	Role: Intern
+	-	Simplified decision-making for client by facilitating managers to work at concept or knowledge level
+	-	Designed software individually using 3-tier architecture of Presentation, Application & Data Layer
+	-	Implemented design patterns using MVC framework, Data Transfer Object, Data Access Object
+	-	Implemented validation layer attached to Presentation and DAO Layer
+	-	Implemented flexible search utility giving user the option to search based on desired fields
+	-	Custom Exception Library bubbled through the architecture to provide useful messages to the client

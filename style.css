@@ -1,0 +1,61 @@
+body{ background-color: gray;}
+table.bodytext { color: white; font-family: Tahoma;}
+p.header {
+		font-size: xx-large;
+		font-weight: 400;
+		}
+td.resHeader { 
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			 }
+img.imageLink{
+			border: 0;
+			}
+a.pagelink{
+			color: goldenrod;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: large;
+		}
+
+a:link {
+		color: maroon;
+		}
+a:visited{
+		
+		}
+
+a.gameTitle{  
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: medium;
+			text-decoration: none;
+			}
+a.projDesc{
+			color: black;
+			font-style: bold;
+			background-color: yellow;
+			font-size: large;
+			text-decoration: none;
+			letter-spacing: 2px;
+			word-spacing: 5px;
+			 padding: 1% 5% 1% 5%;
+			border: 2px solid black;
+}
+a.projectTitle{
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: large;
+			text-decoration:underline;
+			padding: 0% 3% 0% 3%
+}
+
+div#projectTitle{  
+			color: maroon;
+			font-weight: bold;
+			background-color: orange;
+			font-size: x-large;
+			}

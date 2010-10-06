@@ -1,0 +1,6 @@
+Inspired by the Global Game Jam, I decided to develop my child-hood favorite game, Scorched Earth with my self-created deadline of 10 days. Of all the things, I got the game-play done within the given time. It was an interesting experience to work within such time constraints and limited knowledge about the system; and still have the game completed at the end.
+
+- Turn Based game => Finite State Machine
+- AI Tanks : FSM
+- Destroyable landscape using Pixel based collision detection
+- prevent atan2 calling again and again when AI tank turret has to move from its original rotation angle  to destination rotation angle => AITank::think() :: if the value has been calculated, dont calculate it again and again. Reset status in the end, so that it can be re-calculated when required

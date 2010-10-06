@@ -1,0 +1,422 @@
+<html>
+<head>
+<title> Priyank Jain </title>
+<link rel=styleSheet href="style.css" type="text/css">
+<meta name="keywords" content="Priyank Jain, fly2priyank, UNCC, charlotte, game developer, game, developer, brainydexter, entropologygames, entropology games" />
+<meta name="description" content="Priyank Jain's portfolio." />
+</head>
+<body>
+
+<table border=6 cellspacing=10 width=800 align="center">
+  <tr>
+      <td>
+      <a href="../index.html"><img src="../images/title.jpg" width=100% height=200 border=5 class="imageLink"></a>
+
+      </td>
+  </tr>
+
+  <tr>
+      <td>
+      <hr>
+      <table width=100%>
+             <tr>
+<td align="center" width=15%>
+                 <a href="../index.html" target="_parent" class="pageLink">About Me</a>
+
+                 </td>
+                 <td align="center" width=15%>
+                 <a href="../projects.html" target="_parent" class="pageLink">Projects</a>
+                 </td>
+                 <td align="center" width=25%>
+                 <a href="../snippets.html" target="_parent" class="pageLink">Code Snippets</a>
+                 </td>
+                 <td align="center" width=15%>
+
+                 <a href="../resume.html" target="_parent" class="pageLink">Resume</a>
+                 </td>
+                 <td align="center" width=25%>
+                 <a href="../contact.html" target="_parent" class="pageLink">Contact Me</a>
+                 </td>
+             </tr>
+      </table>
+      <hr>
+
+      </td>
+  </tr>
+  
+  <tr>
+  <td>
+
+	<table border=0 width=100% class="bodytext" align="center" height=300 cellpadding="10">
+		       <tr>
+			
+				<th  align="center" >
+		       <p class="header"> Kolor <a name="Top"></a></p>
+			   </th>
+			   </tr>
+				
+				<tr>
+				<td  align="center" >
+				<object width="400" height="225"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=10739380&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=10739380&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="225"></embed></object><p><a href="http://vimeo.com/10739380">Kolor</a> from <a href="http://vimeo.com/user3539182">Priyank jain</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+				</td>
+				
+				</tr>
+				
+				<tr>
+					<td align="center"> 
+					<a class="projDesc" href="http://cid-35f6b81eda3cacb3.skydrive.live.com/self.aspx/Portfolio%20Projects/Kolor/Kolor%20exec.zip" rel="me" target="_blank" >Play Game</a>  &nbsp | &nbsp
+				<a class="projDesc" href="http://cid-35f6b81eda3cacb3.skydrive.live.com/self.aspx/Portfolio%20Projects/Kolor/Kolor%20Src.zip" rel="me"  target="_blank" >Source Code </a> 
+					</td>
+				</tr>
+				
+				<tr>
+				<td>
+				
+				<p>
+
+Kolor is my first 3D first-person shooter game developed only using C++ and OpenGL. The objective of the game is to gain dominance in the world by coloring other players to your own color. Players are on a team roster, represented by a master player. The mechanic enables the color of the team to be determined by the master's color. You can either Kolor(paint) all the slaves (players on the team) or just the master to get hold of the team. Once you "own", 70% of the slaves in the entire game, your team is declared victorious.
+				</p>
+
+				<p>
+I did an initial prototype using C#-XNA to visualize if the game concept would be fun or not. Even though, I did not implement the AI, but the results were promising and the feedback further encouraged me to develop it into a complete game. Prototyping also helped me focus on game design and fleshing out the details of the game mechanic, early in the development phase. This came in handy since it helped me translate the design into game implementation. XNA takes care of a lot of details in the background, which forced me to dig down deep into the math involved and the backbone involved. This led me to adopt C++/OpenGL framework. I early on decided not to use a rendering or a physics engine like OGRE 3D/havok etc., because I wanted to learn in what goes into making a game and get some experience on various topics. However, this turned out to be a huge undertaking and I have been walking the fine line of not going over-the-board, yet customizing solutions to my needs given the time constraints and my limited experience in the field.
+			</p>
+			
+			<p align="center">
+			Prototype Video<br><br>
+			<object width="500" height="405"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12312013&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12312013&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="405"></embed></object><p><a href="http://vimeo.com/12312013">Kolor prototype final</a> from <a href="http://vimeo.com/user3539182">Priyank jain</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+			</p>
+			<hr>
+			
+			<p>
+			These are the questions I came across in my journey so far:
+			<ul>
+			<li> <a href = "#3DModels">  How do I display those 3D models ?  </a> </li>
+			<li> <a href = "#MoveWorld">  How do I move in this world ?  </a> </li>
+			<li> <a href = "#Camera">  How do I make that First-Person View now ? (my own gluLookAt) </a> </li> 
+			<li> <a href = "#Input">  Separating Input into an entity in itself ?  </a> </li>
+			<li> <a href = "#Collision">  When Player and Bullet Collide ?  </a> </li>
+			<li> <a href = "#Architecture">  So what does the architecture look like ? </a> </li>
+			</ul>
+			<hr>
+			</p>
+			
+<p>
+ <a name="3DModels" class="question">How do I display those 3D models ? </a>
+<br>
+<ul>
+	<li> <a href="#LoadModel"> Loading DAE Model </a> </li>
+	<li> <a href="#RenderModel"> Rendering the Model </a> </li>
+</ul>
+
+As I began development, I quickly realised that I would need a way to load-in and render 3D models for players/weapons/world. I was then advised to use Collada DAE format since it is the industry standard. I had no experience with the inner details of file formats. Thus, I decided to write my own Collada importer. The Collada wiki and programmer's guide provided a good starting point and helped me understand how the models are internally organised in a Directed Acyclic Graph. Understanding the DAE format helped me understand the concept of indexing vertex attributes such as position, color, texture etc. Later on, it helped me see the one-to-one correspondence to OpenGL's concept of Vertex Buffer Object.
+</p>
+
+<p>
+	<a name="LoadModel" class="subQuestion">  Loading DAE Model </a>
+	<br>
+During the process of implementing the Collada importer, I was required to store the inner DAG into my own format, translating DAE entities into my own classes. Since the Collada model is organised as a DAG, I was required to implement my own SceneGraph. Take a look at:
+<ul>
+ <li> VSceneGraph.h and VSceneGraph.cpp </li>
+ <li> VSGNode.h and VSGNode.cpp </li>
+ </ul>
+ 
+Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
+<ul>
+ <li> Scene Graph </li>
+ <li> Model Mesh information (organised in a tree structure) stored by process the Geometry Node </li>
+ <li> Node in scenegraph can have the following operations defined in DAE (VSGNode.h and VSGNode.cpp):
+	<ul>
+	<li> Lookat </li>
+	<li> Transformation defined by a 4x4 matrix </li>
+	<li> Translate along X / Y or Z axis </li>
+	<li> Rotation at a given angle about an arbitrary axis </li>
+	<li> Scale </li>
+	<li> Skew </li>
+	</ul>
+</li>
+ <li> Geometry associated can in-turn be made up of many different type of primitives. My importer supports:
+	<ul>
+	<li> Triangle List </li>
+	<li> Polygon List </li>
+	</ul>
+</li>
+ <li> At the heart of the model, resides the vertex (Vertex.h and Vertex.cpp) which stores data attributes as a boost::hash_map { Semantic, (float*) } </li>
+</ul>
+The facade with which the DAE Model is accessed is VSceneGraph.h and VSceneGraph.cpp wrapped around in Collada.h
+</p>
+
+<p>
+	<a name="RenderModel" class="subQuestion"> Rendering the Model </a>
+	<br>
+	Originally, I was using glBegin and glEnd to render the model. However, when I loaded in a model with higher poly count, the framerate crippled. After researching, I resorted to using Indexed Vertex Buffer Objects. For generating the indices for vertices, I run the list of vertices through a hash-map and assign a unique index for each vertex. This can be seen in the following code:
+	-- GeomMesh.cpp constructor and bool VertexExists(...)
+	
+	<br><br>
+	This smoothened out the model rendering FPS rate! These are some of the links I used to help me understand about VBOs:
+	- (insert bookmarks)
+</p>
+	<a href="#Top"> Top </a>
+<hr>
+
+<p>
+<a name="MoveWorld" class="question">
+ How do I move in this world ?
+</a>
+<br>
+	Once the model was rendered, I wanted to create a "player" who could move around in the world. I invited a ton of sub-problems for me with this! To begin with, I needed a mechanism to keep track of the player's position and orientation. This gave birth to FrameTransform. I used openGL superbible as my reference which made me use three vectors:
+	<ul>
+	
+	<li> Origin </li>
+	<li> Up </li>
+	<li> Forward vector </li>
+	
+	</ul>
+	
+	Using right hand thumb rule, I wrote functions that would let the entity move or rotate in the world. The details can be found in FrameTransform.h and .cpp. This was a great learning experience since I was not using any of the glTranslate/ glRotate functions anymore and instead, i was multiplying the transformation matrix on the opengl stack manually!
+	<br><br>
+	
+	When I got the frame Transformation working correctly, I had a player moving around and rotating in world along all the three dimensions. This essentially meant that the player could fly anywhere. Clearly, this is not what I wanted. PlayerTransform Enters. An inherited class of FrameTransform, I restrict the players movement only along the X/Z axis. For the given methods, I had to make a couple of tweaks:
+	- Move (..)
+	- Rotate(...)
+	<br><br>
+	After this, I had a player model moving around.
+	</p>
+	<a href="#Top"> Top </a>
+<hr>
+
+	<p>
+<a name="Camera" class="question"> How do I make that First-Person View now ? (my own gluLookAt) </a>
+<br> <br>
+ I had a way to move the player around, but I wanted to get the First-person view! Essentially what this meant was, I needed to position world and everything else relative to player's coordinate system. So, one way was to move the world when player moves, giving the illusion that the player moves. Or, use the OpenGL transformation stack to transform everything as per player's Coordinate system. I chose the second approach and this is exactly what my Camera class does. It is a 'friend' of (Human)Player, since the camera is tightly coupled to the player. This is the documentation I wrote for the camera:
+ 
+<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code> class FrameTransform (6 DOF)
+-    glm::vec3 m_Origin;
+-    glm::vec3 m_Forward;
+-    glm::vec3 m_Up;
+&#8226;    MoveForward/Right/Up ( amt )
+&#8226;    RotateAround X/Y/Z ( amt )
+&#8226;    void ApplyActorTransform () =&gt; calls glMultMatrix(..)
+
+class Player : public GameObject 
+-    FrameTransform m_Transform; =&gt; Coordinate system w.r.t the world CS
+
+class World : public GameObject (level class)
+-    FrameTransform m_Transform; =&gt; Coordinate system w.r.t the world CS
+</code></pre>
+
+<br>
+A first person camera helps to view the world from the player’s eyes. Thus, we need a transformation which enables the view from player’s reference. <br>
+Example:
+<ul>
+<li> WCS (0, 0)W  </li>
+<li> PCS (2, 2)W => Player is at 2, 2 in the world coordinate system => PW<-P (2, 2)  </li>
+<li> Chair P = (.5, .5)P  </li>
+<li> => Chair W = PW<-P * ChairP = (2.5, 2.5)W </li>
+</ul>
+This way we can get everything in World’s frame of reference. For First Person Camera, we need to transform everything as per Player’s transformation, i.e. everything needs to be brought into Player’s coordinate system.
+<br><br>
+
+Player.m_Transform represents PW<-P . If we invert this matrix, we get P’P<-W which brings everything from World coordinate space to Player Coordinate space (and we then see everything from Player’s perspective).
+<br><br>
+This way, everything is still specified in the WCS (given the Push/PopMatrix() style) and transformed to the Player’s view.
+<br><br>
+<a class="subQuestion"> Implementation </a>
+<br>
+<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>void Camera :: ApplyCameraTransform()
+{
+    glm::mat4 l_TransformationMatrix;
+    m_Player-&gt;m_Transformation.GetTransformation(l_TransformationMatrix, false); //false, since we want the Translation otherwise only rotation is returned
+
+    l_TransformationMatrix = glm::core::function::matrix::inverse(l_TransformationMatrix);
+    glMultMatrixf(glm::value_ptr(l_TransformationMatrix));
+}
+</code></pre>
+<br><br>
+Camera is assumed to be a friend class of Player and thus has access to protected member m_Player->m_Transformation. 
+GetTransformation(..) populates l_TransformationMatrix with translation and rotation information of the player. This represents PW<-P at the moment. If we invert it, we get P’P<-W.
+<br><br>
+We then multiply on the matrix stack, this P’ to bring following transformation in Player’s Coordinate System. It is invoked as follows:
+<br>
+<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>
+void GameGL :: paintGL()
+{
+    glClear(GL_COLOR_BUFFER_BIT &#124; GL_DEPTH_BUFFER_BIT);
+    
+    glPushMatrix();
+        mp_Camera-&gt;ApplyCameraTransform();
+
+        std::list&lt;GameObject*&gt;::iterator it_GameObjs;
+
+            for(it_GameObjs = m_GameObjectList.begin(); it_GameObjs != m_GameObjectList.end(); it_GameObjs++) {
+                (*it_GameObjs)-&gt;Render();
+            }
+... 
+}
+</code></pre>
+<br><br>
+As I read more about openGL, I came across the gluLookAt function which in essence, does the same thing as I have done.
+ </p>
+ <a href="#Top"> Top </a>
+<hr>
+
+<p>
+<a name="Input" class="question">
+Separating Input into an entity in itself
+</a>
+<br><br>
+Uptil now, I did not have an entity which would take care of all the input handling in one place. Also, Qt is a GUI framework and is not really designed for games. Thus, I needed a way to keep track of what keys are pressed and what buttons are clicked. For this requirement, I had to make Input class a wrapper to process all the incoming events.
+<br><br>
+To handle key-pressed event, I decided to use a QSet. Whenever a key was pressed, I add the 'Key' to this set. Whenever the key is released, I remove the key from set. Querying if a key is currently pressed is found by querying the set.
+<br><br>
+To handle mouse click events, I use a hash { Mouse_Button, bool }. As a button is pressed/released, I update the hash[button] to TRUE/FALSE. When a button is queried, it is a simple lookup in the hash. Also, if the button is found to be pressed (or TRUE), I invoke the release on that button, in order to fix the problem of reporting false button clicks.
+<br><br>
+Once I had this in order, the input classes worked like a charm.
+</p>
+<a href="#Top"> Top </a>
+<hr>
+
+<p>
+<a name="Collision" class="question">
+ When player and bullet collide ?
+ </a> 
+ <br><br>
+	At this point, I had the player strafing and turning in-sync with the keyboard and mouse input. Also, players were firing bullets with a left mouse button click. Now, I needed to focus on the core of game mechanic, i.e., hitting/coloring other players by a bullet. This called for collision detection!
+<br><br>	
+	My experience with the prototype taught me that I would need some sort of broad-phase collision detection, since a O(n^2) operation was killing the framerate even with a meager number of players on the field firing bullets at each other. Thus, after some thought, I came up with this approach:
+	<br><br>
+	The involved actors are :-
+<ul>
+<li> Players </li>
+<li> Bullets(Fired) </li>
+<li> Weapons (placed at points located throughout the level, which other players can pick up, aka static objects) </li>
+<li> World </li>
+</ul>
+As of now, I am just trying to get the Players and bullet collision pairs.
+<ul>
+<li>
+Players: Players are represented by a bounding sphere, located at a position and moving with a velocity. Each player would have approximately the bounding sphere of same size. They can potentially collide with:<br> 
+Players - weapons <br>
+Players - World <br>
+</li>
+
+<li>
+Bullets: Bullets are  represented by a segment with a start point and an end point (using posn, posn + vel) (each frame). Bullet can hit :-
+<table border=1 align="center" cellpadding="5" class="bodyText">
+<tr>
+<td>
+Fired<br> Bullet
+</td>
+	
+<td>
+Player <br> <hr>
+(Other) Bullet <br> <hr>
+World 
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<br>
+Approach:
+<br><br>
+As each player and bullet is created, associate a reference to each entity within CollisionMgr as a list<Player*> and list<Bullet*>.
+<br><br>
+On each update frame, do the following:
+<br>
+<ul>
+<li>
+For each player, find Cell(s); it is associated with :=> list< Cell* > PlayerCells
+</li>
+
+<li>
+For each Bullet (segment), find Cell(s); it is associated with :=> list< Cell* > BulletCells
+</li>
+
+<li>
+For each entity, the cell(s) can be found out based on the entity.
+<ul>
+<li> Player: Bounding sphere :The grid size are uniformly sized cell (size, M) such that the M = 2R (R = radius of the bounding sphere). Thus, at any given time, at most the bounding sphere can be in contact with 4 cells. To determine the cells associated, find the 8 points for a given sphere (each at 45 degrees to the X,Y,Z axis along the 8 octants). (And then find out, in which grid cell does each of the point lie. This could at max return 4 cells).</li>
+
+<li>Bullet: Segmented Ray with endpoints at : Posn and (Posn + vel). Thus, all the cells that the line passes through would yield the cells. </li>
+</ul>
+</li>
+
+<li>
+Cell can be a structure like
+
+<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>Cell {
+
+List &lt; Player*&gt;
+
+List &lt; Bullet* &gt;
+
+Value (x,y,z) =&gt; unique value based on these three coordinates
+
+}
+</code></pre>
+</li>
+
+<li> As a cell is found by either of the entities, given its coordinates and grid position, a cell can be put on the hash-map. As the players and bullets yield cells, they can be referenced using this map and in-turn populate the list of player and bullet residing within that cell structure.
+</li>
+</ul>
+
+After all the player and bullet–affected cells have been found, if we iterate through the hash-map, then it would yield all the possible pair of colliding players and bullets in a given cell. This can then be further handled using narrow-phase collision.
+	<br><br>
+Once the broad-phase collision detection is working, narrow phase would be a Bounding-Sphere / Segment (Player/Bullet) collision check.  This required me to compute the bounding sphere for the given DAE model. I wrote a simple method to compute the bounding sphere:
+<ul>
+ <li> Iterate through all the points on the model </li>
+ <li> Keep a track of the minimum and the maximum point found so far </li>
+ <li> Sphere radius = distance(minimumPt, maximumPt) * 0.5; </li>
+ <li> Sphere center = minimumPt + ( (maximumPt - minimumPt) * 0.5) </li>
+ 
+  <li> I run the above method recursively on the model scenegraph to return a hierarchy of bounding spheres </li>
+  <li> The resulting bounding spheres are a good approximation and a tight-enough fit for the underlying model </li>
+  </ul>
+</p>
+<a href="#Top"> Top </a>
+<hr>
+
+<p>
+<a name="Architecture" class="question">
+So what does the architecture look like ?
+ </a> 
+ <br><br>
+ <img src= "http://yuml.me/diagram/scruffy/class/[TeamMgr]++-[Team],[Team]++-[Players]" >
+  <br><br>
+  <img src=
+"http://yuml.me/diagram/scruffy/class/ [Team|TeamColor;Master;NumPlayers; PlayerList|AddPlayer(Player*)]">
+<br><br>
+ <img src="http://yuml.me/diagram/scruffy/class/[Player]^[Human], [Player]^[Bot]">
+<br><br>
+
+
+ Please see the attached code for more details.
+</p>
+
+ </td>
+				</tr>
+				
+	
+	</table>
+	</td>
+	</tr>
+
+ <tr>
+      <td class="bodytext" align="center">
+
+      <iframe name="content" src="..\bottombar.html" border="0" width="800" height="50" frameborder="0" scrolling="no" align="center">
+                Your browser does not support inline frames. Oops!
+      </iframe>
+      </td>
+  </tr>
+
+
+</table>
+
+<!-- Start of StatCounter Code -->
+
+<!-- End of StatCounter Code -->
+
+</body>
+
+</html>
