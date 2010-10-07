@@ -12,7 +12,7 @@ Database Technology		Oracle 9i, PL/SQL, SQL Server, JDBC
 Employment
 *	Electronic Arts, NC (USA)							July 2010 – Present
 	Role: Contract Software Engineer
-	Unannounced Title(Nintendo 3DS)
+	Unannounced Title (Nintendo 3DS)
 	Technology: C++, C#, ActionScript2, Nant Scripts, Python 
 	- Extended rendering primitives to support in-game User Interface elements in depth
 	- Collaborated extensively with the UI designer to get Flash/ActionScript screens working in game
@@ -21,7 +21,7 @@ Employment
 	- Setup compiler defines to handle different build configurations in sync with all the other dependency packages
 	- Worked closely with other team members to ensure project deliverables are completed on-schedule  
 
-*	University of North Carolina, Charlotte(USA)		July 2009 – Present
+*	University of North Carolina, Charlotte(USA)		July 2009 – June 2010
 	Role: Research Assistant
 	Technology: C++, OpenGL, Qt, CGAL, Boost
 	- Developed software for reconstructing terrain-surface using Marching Triangle Algorithm 
@@ -44,7 +44,7 @@ Employment
 
 *	Ministry of Information Technology, Govt. of India		Jan 2006 – Jun 2006
 	Role: Intern
-	Technology: Java Swings, JDBC
+	Technology: Java Swings, JDBC, MVC
 	- Simplified decision-making for client by facilitating managers to work at concept or knowledge level
 	- Designed software individually using 3-tier architecture of Presentation, Application & Data Layer
 	- Implemented design patterns using MVC framework, Data Transfer Object, Data Access Object
@@ -53,8 +53,8 @@ Employment
 	- Developed custom Exception Library to provide useful messages to the client
 
 
-Student Projects & Graduate CourseWork
-*	Kolor (PC) (In progress)									http://webpages.uncc.edu/~pjain6/projects.html#Kolor
+Independent Projects & Graduate CourseWork
+*	Kolor (PC) (In progress)									http://p-yank.com/projects.html#Kolor
 	Technology: C++, OpenGL, Qt Framework, Boost, OpenGL Mathematics
 	- Designed 3D First Person Shooter with a unique game mechanic of claiming enemies by Colouring
 	- Developed collada-DAE importer to get 3D models into the game
@@ -63,7 +63,7 @@ Student Projects & Graduate CourseWork
 	- Implemented efficient hash-based collision detection/resolution for players and bullets in game world
 	- Improved rendering performance using Vertex Buffer Objects
 
-*	Juhuligan (PC) 												http://webpages.uncc.edu/~pjain6/projects.html#Juhuligan
+*	Juhuligan (PC) 												http://p-yank.com/projects.html#Juhuligan
 	Technology: C#, XNA
 	- Designed a side scrolling 2D-Arcade game inspired by Mario and Contra
 	- Focussed the game code to follow object oriented architecture
