@@ -11,7 +11,7 @@ Database Technology		Oracle 9i, PL/SQL, SQL Server, JDBC
 
 Employment
 *	Electronic Arts, NC (USA)							July 2010 – Present
-	Role: Contract Software Engineer
+	Role: Software Engineer
 	FIFA (Nintendo 3DS)
 	Technology: C++, C#, ActionScript2, Nant Scripts, Python 
 	- Extended rendering primitives to support in-game User Interface elements in depth
