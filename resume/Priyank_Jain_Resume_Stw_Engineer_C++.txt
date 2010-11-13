@@ -1,8 +1,8 @@
-fly2priyank@gmail.com		Priyank Jain		2114 MacAlpine Circle
- +1-732-824-3479								Morrisville, NC USA
+fly2priyank@gmail.com		Priyank Jain		3160 Princeton St
+ +1-732-824-3479								Lumberton, NC USA
  
 Skills
-Languages				C++, C# (ASP.NET), Java, Python, ActionScript 2
+Languages				C++, C# (ASP.NET), Java, Python, ActionScript 2, AS 3
 API						OpenGL, Qt, XNA, Boost, CGAL
 Tools					Perforce, SVN, Nant, Visual Studio 2008, Eclipse
 Platforms				Nintendo 3DS, XBOX 360, Windows 7
@@ -10,7 +10,7 @@ Database Technology		Oracle 9i, PL/SQL, SQL Server, JDBC
 
 
 Employment
-*	Electronic Arts, NC (USA)							July 2010 – Present
+*	Electronic Arts, NC (USA)							July 2010 – Oct 2010
 	Role: Software Engineer
 	FIFA (Nintendo 3DS)
 	Technology: C++, C#, ActionScript2, Nant Scripts, Python 
@@ -25,7 +25,7 @@ Employment
 	Role: Research Assistant
 	Technology: C++, OpenGL, Qt, CGAL, Boost
 	- Developed software for reconstructing terrain-surface using Marching Triangle Algorithm 
-	- Implemented Delaunay Triangulation constraint
+	- Implemented Delaunay Triangulation constraint over point cloud (LIDAR data) 
 	- Implemented renderer in OpenGL to view the CGAL Polyhedron model
 	- Studied computational geometry concepts such as Polyhedron and half-edge data structures
 
