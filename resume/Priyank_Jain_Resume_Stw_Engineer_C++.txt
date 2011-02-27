@@ -1,15 +1,25 @@
-fly2priyank@gmail.com		Priyank Jain		3160 Princeton St
- +1-732-824-3479								Lumberton, NC USA
+fly2priyank@gmail.com		Priyank Jain		14328 Centreport Landing Circle
+ +1-732-824-3479			http://p-yank.com					Fort Worth, TX USA
  
 Skills
 Languages				C++, C# (ASP.NET), Java, Python, ActionScript 2, AS 3
-API						OpenGL, Qt, XNA, Boost, CGAL
+API						OpenGL, GLSL, HLSL Qt, XNA, Boost, CGAL
 Tools					Perforce, SVN, Nant, Visual Studio 2008, Eclipse
 Platforms				Nintendo 3DS, XBOX 360, Windows 7
 Database Technology		Oracle 9i, PL/SQL, SQL Server, JDBC
 
 
 Employment
+*	Verizon FIOS, TX (USA)							Nov 2010 – Present
+	Role: Software Engineer
+	FIOS Internet TV
+	Technology: C++, Python 
+	- Developing framework for inserting ads in HTTP live video streaming on server side 
+	- Developing product to enable live Video streaming through internet across different devices
+	- Prototype adaptive bitrate video streaming media player on android OS
+	- Maintain legacy code and integrate it with newly developed product for backward compatibility
+
+
 *	Electronic Arts, NC (USA)							July 2010 – Oct 2010
 	Role: Software Engineer
 	FIFA (Nintendo 3DS)
