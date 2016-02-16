@@ -81,8 +81,8 @@ function onDocumentMouseDown( event ) {
   console.log("Click");
 
 	var mouse = new THREE.Vector2();
-	mouse.x = ( (event.clientX - game.renderer.domElement.offsetLeft) / Constants.WIDTH ) * 2 - 1;
-	mouse.y = -( (event.clientY - game.renderer.domElement.offsetTop) / Constants.HEIGHT ) * 2 + 1;
+	mouse.x = ( (event.clientX - game.renderer.domElement.offsetLeft) / game.renderer.domElement.width ) * 2 - 1;
+	mouse.y = -( (event.clientY - game.renderer.domElement.offsetTop) / game.renderer.domElement.height ) * 2 + 1;
 
 	//mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
 	//mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -165,15 +165,26 @@ game.prototype.update = function(dt){
 };
 
 var lag = 0;
+var factor  = 1;
+var sign = 1;
 game.prototype.render = function(){
 	var now = new Date().getTime();
 	var dt = now - (time || now);
 	lag += dt;
 
-	if(lag > 300/2)
+	if(lag > 300/factor)
 	{
 		this.update(dt);
 		lag = 0;
+
+		// if increasing and crossed threshold
+		if(sign == 1 && factor > 2){
+			sign = -1; // decrease
+		}else if(sign == -1 && factor < 1.1){ // if decreasing and fell below threshold
+			sign = 1; // increase
+		}
+
+		factor += (sign * 0.003);
 	}
 
 	this.boardMgr.render(dt);
