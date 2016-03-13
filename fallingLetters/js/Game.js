@@ -7,18 +7,17 @@ var game = function()
 game.prototype.init = function(){
 	this.keyboard = new KeyboardState();
 
-	var WIDTH = 800;
-	var HEIGHT = 600;
+	Constants.updateConsts(window.innerWidth, window.innerHeight);
 
 	this.scene = new THREE.Scene();
 
-	this.camera = new THREE.OrthographicCamera( 0, WIDTH, 0, HEIGHT, -10, 1000 );
+	this.camera = new THREE.OrthographicCamera( 0, Constants.WIDTH, 0, Constants.HEIGHT, -10, 1000 );
 	this.camera.position.set(0, 0, 100);
 	this.camera.lookAt(new THREE.Vector3( 0, 0, 0 ));
 	this.scene.add(this.camera);
 
 	this.renderer = new THREE.WebGLRenderer();
-	this.renderer.setSize( WIDTH, HEIGHT );
+	this.renderer.setSize( Constants.WIDTH, Constants.HEIGHT );
 	document.body.appendChild( this.renderer.domElement );
 
 	// var NxN = 5;
@@ -37,8 +36,24 @@ game.prototype.init = function(){
 	this.wordMgr = new WordMgr();
 	this.wordMgr.init();
 
+	this.scoreMgr = new ScoreMgr();
+	this.scoreMgr.init();
+
 	// when the mouse moves, call the given function
 	document.addEventListener( 'click', onDocumentMouseDown, false );
+
+	window.addEventListener('resize', function () {
+		Constants.updateConsts(window.innerWidth, window.innerHeight);
+
+		game.camera.left = 0;
+		game.camera.right = Constants.WIDTH;
+		game.camera.top = 0;
+		game.camera.bottom = Constants.HEIGHT;
+		game.camera.updateProjectionMatrix();
+
+	    game.renderer.setSize(Constants.WIDTH, Constants.HEIGHT);
+	});
+
 };
 
 function onDocumentMouseDown( event ) {
@@ -146,23 +161,35 @@ game.prototype.update = function(dt){
 	this.keyboard.update();
 	
 	this.boardMgr.update(dt);
-
+	this.scoreMgr.update(dt);
 };
 
 var lag = 0;
+var factor  = 1;
+var sign = 1;
 game.prototype.render = function(){
 	var now = new Date().getTime();
 	var dt = now - (time || now);
 	lag += dt;
 
-	if(lag > 300/2)
+	if(lag > 300/factor)
 	{
 		this.update(dt);
 		lag = 0;
+
+		// if increasing and crossed threshold
+		if(sign == 1 && factor > 2){
+			sign = -1; // decrease
+		}else if(sign == -1 && factor < 1.1){ // if decreasing and fell below threshold
+			sign = 1; // increase
+		}
+
+		factor += (sign * 0.003);
 	}
 
 	this.boardMgr.render(dt);
 	this.wordMgr.render(dt);
+	this.scoreMgr.render(dt);
 	this.renderer.render(this.scene, this.camera);
 
 	time = now;
