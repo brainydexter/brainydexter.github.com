@@ -1,0 +1,12 @@
+Feedback
+
+Things to do
+- minify js
+
+Bugs:
+
+
+Solved Bugs
+
+
+DONE
