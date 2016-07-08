@@ -1,5 +1,5 @@
 body{ background-color: gray;}
-table.bodytext { color: white; font-family: Tahoma;}
+table.bodytext { color: white; font-family: Helvetica, Arial,Tahoma;}
 p.header {
 		font-size: xx-large;
 		font-weight: 400;
@@ -53,7 +53,8 @@ a.projectTitle{
 			padding: 0% 3% 0% 3%
 }
 
-div#projectTitle{  
+div#projectTitle{
+			text-align: center;	  
 			color: maroon;
 			font-weight: bold;
 			background-color: orange;
