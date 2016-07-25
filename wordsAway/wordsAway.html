@@ -93,9 +93,9 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			    <li>
 			        Event aggregator for decoupling publishers and event subscribers
 			        <ul>
+			            <li>avoid module dependencies</li>
 			            <li>compile time issues with generics</li>
 			            <li>processing all subscribers at once</li>
-			            <li>avoid module dependency</li>
 			        </ul>
 			    </li>
 			    <li>Swipe to submit</li>
@@ -152,26 +152,24 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			</p>
 			
 <p>
- <a name="3DModels" class="question">How do I display those 3D models ? </a>
+ <a name="EventAggregator" class="question">How do I display those 3D models ? </a>
 <br>
 <ul>
-	<li> <a href="#LoadModel"> Loading DAE Model </a> </li>
-	<li> <a href="#RenderModel"> Rendering the Model </a> </li>
+	<li> <a href="#Decoupling"> Decoupling - avoid module dependencies </a> </li>
 </ul>
-
-As I began development, I quickly realised that I would need a way to load-in and render 3D models for players/weapons/world. I was then advised to use Collada DAE format since it is the industry standard. I had no experience with the inner details of file formats. Thus, I decided to write my own Collada importer. The Collada wiki and programmer's guide provided a good starting point and helped me understand how the models are internally organised in a Directed Acyclic Graph. Understanding the DAE format helped me understand the concept of indexing vertex attributes such as position, color, texture etc. Later on, it helped me see the one-to-one correspondence to OpenGL's concept of Vertex Buffer Object.
+	Event aggregator details go in here
 </p>
 
 <p>
-	<a name="LoadModel" class="subQuestion">  Loading DAE Model </a>
+	<a name="Decoupling" class="subQuestion">  Decoupling - avoid module dependencies </a>
 	<br>
-During the process of implementing the Collada importer, I was required to store the inner DAG into my own format, translating DAE entities into my own classes. Since the Collada model is organised as a DAG, I was required to implement my own SceneGraph. Take a look at:
-<ul>
- <li> VSceneGraph.h and VSceneGraph.cpp </li>
- <li> VSGNode.h and VSGNode.cpp </li>
+Decoupling - avoid module dependencies - details go here.
+Take a look at:
+ <ul>
+ 	<li> EventAggregator.cs </li>
  </ul>
  
-Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
+<!-- Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
 <ul>
  <li> Scene Graph </li>
  <li> Model Mesh information (organised in a tree structure) stored by process the Geometry Node </li>
@@ -208,7 +206,7 @@ The facade with which the DAE Model is accessed is VSceneGraph.h and VSceneGraph
 </p>
 	<a href="#Top"> Top </a>
 <hr>
-
+-->
 <p>
 <a name="MoveWorld" class="question">
  How do I move in this world ?
