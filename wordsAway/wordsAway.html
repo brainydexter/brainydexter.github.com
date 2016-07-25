@@ -88,14 +88,65 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			<hr>
 			
 			<p>
-			These are the questions I came across in my journey so far:
+			Things I did while I was working on this:
 			<ul>
-			<li> <a href = "#3DModels">  How do I display those 3D models ?  </a> </li>
-			<li> <a href = "#MoveWorld">  How do I move in this world ?  </a> </li>
-			<li> <a href = "#Camera">  How do I make that First-Person View now ? (my own gluLookAt) </a> </li> 
-			<li> <a href = "#Input">  Separating Input into an entity in itself ?  </a> </li>
-			<li> <a href = "#Collision">  When Player and Bullet Collide ?  </a> </li>
-			<li> <a href = "#Architecture">  So what does the architecture look like ? </a> </li>
+			    <li>
+			        Event aggregator for decoupling publishers and event subscribers
+			        <ul>
+			            <li>compile time issues with generics</li>
+			            <li>processing all subscribers at once</li>
+			            <li>avoid module dependency</li>
+			        </ul>
+			    </li>
+			    <li>Swipe to submit</li>
+			    <ul>
+			        <li>Active word manager for managing&nbsp;letters while word is being formed</li>
+			        <li>originally implemented tap to submit and transitioned to swipe based on user feedback</li>
+			    </ul>
+			    <li>
+			        Menu navigation by dynamically managing unity scenes
+			        <ul>
+			            <li>Replaying&nbsp;game through menu system results in no memory leaks</li>
+			            <li>using coroutines for menu change</li>
+			            <li>designers could independently design screens</li>
+			        </ul>
+			    </li>
+			    <li>Object pooling and allocating resources&nbsp;at game start to avoid repeated allocation at runtime</li>
+			    <li>
+			        Powerups
+			        <ul>
+			            <li>cyclic conveyor belt effect for alongwith object pooling</li>
+			            <li>coroutines to handle&nbsp;powerup effect</li>
+			            <li>Drag&amp;Drop behavior at runtime</li>
+			        </ul>
+			    </li>
+			    <li>Implementing generic audio, powerup, animation unity components&nbsp;which enabled the designers to associate the FX to event type</li>
+			    <li>
+			        Optimized Trie for O(1) lookup of words
+			        <ul>
+			            <li>stats</li>
+			            <li>wrote utility with knobs to prune english dictionary : 3 - 7 letter words</li>
+			        </ul>
+			    </li>
+			    <li>
+			        Gameplay<br />
+			        <ul>
+			            <li>Sharing 1 material across all blocks to avoid extra draw calls</li>
+			            <li>Sharing 1 material across all powerups&nbsp;to avoid extra draw calls</li>
+			            <li>Managing falling block, board with generic methods, powerups</li>
+			            <li>Letter block selection state</li>
+			            <li>setup scoring for words</li>
+			        </ul>
+			    </li>
+			    <li>unity meta hell</li>
+			    <li>
+			        Automating build for android
+			        <ul>
+			            <li>commandline build for android</li>
+			            <li>upload to google drive</li>
+			            <li>easy to distribute to testers</li>
+			        </ul>
+			    </li>
 			</ul>
 			<hr>
 			</p>
