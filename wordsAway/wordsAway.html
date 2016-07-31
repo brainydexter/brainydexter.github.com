@@ -98,10 +98,18 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			            <li>processing all subscribers at once</li>
 			        </ul>
 			    </li>
+			    <li> Infrastructure to support multiple boards
+			    	<ul>
+			    		<li> Generic interface which specifc boards can implement </li>
+			    		<li> Board can register for whatever event they are interested in</li>
+			    		<li> Board is responsible for publishing board over event populated with whatever relevant details</li>
+			    	</ul>
+			    </li>
 			    <li>Swipe to submit</li>
 			    <ul>
 			        <li>Active word manager for managing&nbsp;letters while word is being formed</li>
 			        <li>originally implemented tap to submit and transitioned to swipe based on user feedback</li>
+			        <li>Tuning the drag threshold</li>
 			    </ul>
 			    <li>
 			        Menu navigation by dynamically managing unity scenes
@@ -118,6 +126,7 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			            <li>cyclic conveyor belt effect for alongwith object pooling</li>
 			            <li>coroutines to handle&nbsp;powerup effect</li>
 			            <li>Drag&amp;Drop behavior at runtime</li>
+			            <li>Rocket has an oscillating behavior with tuning parameters of amplitude/speed</li>
 			        </ul>
 			    </li>
 			    <li>Implementing generic audio, powerup, animation unity components&nbsp;which enabled the designers to associate the FX to event type</li>
