@@ -62,33 +62,29 @@
 				
 				</tr>
 				
-				<tr>
+				<!-- <tr>
 					<td align="center"> 
 					<a class="projDesc" href="http://cid-35f6b81eda3cacb3.skydrive.live.com/self.aspx/Portfolio%20Projects/Kolor/Kolor%20exec.zip" rel="me" target="_blank" >Play Game</a>  &nbsp | &nbsp
 				<a class="projDesc" href="http://cid-35f6b81eda3cacb3.skydrive.live.com/self.aspx/Portfolio%20Projects/Kolor/Kolor%20Src.zip" rel="me"  target="_blank" >Source Code </a> 
 					</td>
-				</tr>
+				</tr> -->
 				
 				<tr>
 				<td>
 				
 				<p>
 
-Kolor is my first 3D first-person shooter game developed only using C++ and OpenGL. The objective of the game is to gain dominance in the world by coloring other players to your own color. Players are on a team roster, represented by a master player. The mechanic enables the color of the team to be determined by the master's color. You can either Kolor(paint) all the slaves (players on the team) or just the master to get hold of the team. Once you "own", 70% of the slaves in the entire game, your team is declared victorious.
+WordsAway is a game I developed using Unity/C# in 2.5 months with me being the only engineer on the team. The game offers multiple levels each of which offers a challenge in its own right. The core game mechanic is to form words by connecting adjacent letters and formed words are then cleared from the board. Player wins the game by clearing the set challenge or is defeated if the letters tower up and reach the ceiling.
 				</p>
 
 				<p>
-I did an initial prototype using C#-XNA to visualize if the game concept would be fun or not. Even though, I did not implement the AI, but the results were promising and the feedback further encouraged me to develop it into a complete game. Prototyping also helped me focus on game design and fleshing out the details of the game mechanic, early in the development phase. This came in handy since it helped me translate the design into game implementation. XNA takes care of a lot of details in the background, which forced me to dig down deep into the math involved and the backbone involved. This led me to adopt C++/OpenGL framework. I early on decided not to use a rendering or a physics engine like OGRE 3D/havok etc., because I wanted to learn in what goes into making a game and get some experience on various topics. However, this turned out to be a huge undertaking and I have been walking the fine line of not going over-the-board, yet customizing solutions to my needs given the time constraints and my limited experience in the field.
+I did an initial prototype using ThreeJs to visualize if the game concept would be fun or not. The game was not visually great, but the core game seemed promising and the feedback further encouraged me to develop it into a complete game. Prototyping exposed some big issues that I was well prepared to tackle while developing the game in C#. I wanted to use this game to be a part of my portfolio, but I also wanted to build something that was polished that I could be proud of, show to people and also sell in the market.
 			</p>
 			
-			<p align="center">
-			Prototype Video<br><br>
-			<object width="500" height="405"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12312013&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12312013&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="405"></embed></object><p><a href="http://vimeo.com/12312013">Kolor prototype final</a> from <a href="http://vimeo.com/user3539182">Priyank jain</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-			</p>
 			<hr>
 			
 			<p>
-			Things I did while I was working on this:
+			This is a list of things I worked on during the dev cycle:
 			<ul>
 			    <li>
 			        Event aggregator for decoupling publishers and event subscribers
@@ -168,15 +164,16 @@ I did an initial prototype using C#-XNA to visualize if the game concept would b
 			<hr>
 			</p>
 			
-<p>
- <a name="EventAggregator" class="question">How do I display those 3D models ? </a>
+<!-- <p>
+ <a name="EventAggregator" class="question">EventAggregator </a>
 <br>
 <ul>
 	<li> <a href="#Decoupling"> Decoupling - avoid module dependencies </a> </li>
 </ul>
 	Event aggregator details go in here
-</p>
+</p> -->
 
+<!--
 <p>
 	<a name="Decoupling" class="subQuestion">  Decoupling - avoid module dependencies </a>
 	<br>
@@ -186,7 +183,7 @@ Take a look at:
  	<li> EventAggregator.cs </li>
  </ul>
  
-<!-- Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
+ Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
 <ul>
  <li> Scene Graph </li>
  <li> Model Mesh information (organised in a tree structure) stored by process the Geometry Node </li>
@@ -223,7 +220,7 @@ The facade with which the DAE Model is accessed is VSceneGraph.h and VSceneGraph
 </p>
 	<a href="#Top"> Top </a>
 <hr>
--->
+
 <p>
 <a name="MoveWorld" class="question">
  How do I move in this world ?
@@ -466,7 +463,7 @@ So what does the architecture look like ?
 	</table>
 	</td>
 	</tr>
-
+-->
  <tr>
       <td class="bodytext" align="center">
 
