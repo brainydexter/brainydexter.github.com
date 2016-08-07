@@ -7,72 +7,75 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://p-yank.com/</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/index.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/index.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/projects.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/projects.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/snippets.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/snippets.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/resume.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/resume.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/contact.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/contact.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/bottombar.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/bottombar.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/kolor/kolor.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/wordsAway/wordsAway.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/juhuligan/juhuligan.html</loc>
-  <lastmod>2010-10-18T23:37:31+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/kolor/kolor.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/resume/Priyank_Jain_Resume_Stw_Engineer_C++.pdf</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/juhuligan/juhuligan.html</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/resume/Priyank_Jain_Resume_Stw_Engineer_C++.doc</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/resume/Priyank_Jain_Lead_Software_Engineer.pdf</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://p-yank.com/resume/Priyank_Jain_Resume_Stw_Engineer_C++.txt</loc>
-  <changefreq>weekly</changefreq>
+  <loc>http://brainydexter.github.io/resume/Priyank_Jain_Lead_Software_Engineer.doc</loc>
+  <lastmod>2016-08-07T21:53:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 </urlset>
