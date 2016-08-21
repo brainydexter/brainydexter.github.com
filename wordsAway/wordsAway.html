@@ -89,7 +89,7 @@ I did an initial prototype using ThreeJs to visualize if the game concept would 
 			This is a list of things I worked on during the dev cycle:
 			<ul>
 			    <li>
-			        Event aggregator for decoupling publishers and event subscribers
+			        <a href="https://github.com/brainydexter/PublicCode/blob/master/common/EventAggregator.cs">Event aggregator for decoupling publishers and event subscribers</a>
 			        <ul>
 			            <li>avoid module dependencies</li>
 			            <li>compile time issues with generics</li>
@@ -270,7 +270,7 @@ class World : public GameObject (level class)
 </code></pre>
 
 <br>
-A first person camera helps to view the world from the player’s eyes. Thus, we need a transformation which enables the view from player’s reference. <br>
+A first person camera helps to view the world from the playerÂ’s eyes. Thus, we need a transformation which enables the view from playerÂ’s reference. <br>
 Example:
 <ul>
 <li> WCS (0, 0)W  </li>
@@ -278,12 +278,12 @@ Example:
 <li> Chair P = (.5, .5)P  </li>
 <li> => Chair W = PW<-P * ChairP = (2.5, 2.5)W </li>
 </ul>
-This way we can get everything in World’s frame of reference. For First Person Camera, we need to transform everything as per Player’s transformation, i.e. everything needs to be brought into Player’s coordinate system.
+This way we can get everything in WorldÂ’s frame of reference. For First Person Camera, we need to transform everything as per PlayerÂ’s transformation, i.e. everything needs to be brought into PlayerÂ’s coordinate system.
 <br><br>
 
-Player.m_Transform represents PW<-P . If we invert this matrix, we get P’P<-W which brings everything from World coordinate space to Player Coordinate space (and we then see everything from Player’s perspective).
+Player.m_Transform represents PW<-P . If we invert this matrix, we get PÂ’P<-W which brings everything from World coordinate space to Player Coordinate space (and we then see everything from PlayerÂ’s perspective).
 <br><br>
-This way, everything is still specified in the WCS (given the Push/PopMatrix() style) and transformed to the Player’s view.
+This way, everything is still specified in the WCS (given the Push/PopMatrix() style) and transformed to the PlayerÂ’s view.
 <br><br>
 <a class="subQuestion"> Implementation </a>
 <br>
@@ -298,9 +298,9 @@ This way, everything is still specified in the WCS (given the Push/PopMatrix() s
 </code></pre>
 <br><br>
 Camera is assumed to be a friend class of Player and thus has access to protected member m_Player->m_Transformation. 
-GetTransformation(..) populates l_TransformationMatrix with translation and rotation information of the player. This represents PW<-P at the moment. If we invert it, we get P’P<-W.
+GetTransformation(..) populates l_TransformationMatrix with translation and rotation information of the player. This represents PW<-P at the moment. If we invert it, we get PÂ’P<-W.
 <br><br>
-We then multiply on the matrix stack, this P’ to bring following transformation in Player’s Coordinate System. It is invoked as follows:
+We then multiply on the matrix stack, this PÂ’ to bring following transformation in PlayerÂ’s Coordinate System. It is invoked as follows:
 <br>
 <pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>
 void GameGL :: paintGL()
@@ -425,7 +425,7 @@ Value (x,y,z) =&gt; unique value based on these three coordinates
 </li>
 </ul>
 
-After all the player and bullet–affected cells have been found, if we iterate through the hash-map, then it would yield all the possible pair of colliding players and bullets in a given cell. This can then be further handled using narrow-phase collision.
+After all the player and bulletÂ–affected cells have been found, if we iterate through the hash-map, then it would yield all the possible pair of colliding players and bullets in a given cell. This can then be further handled using narrow-phase collision.
 	<br><br>
 Once the broad-phase collision detection is working, narrow phase would be a Bounding-Sphere / Segment (Player/Bullet) collision check.  This required me to compute the bounding sphere for the given DAE model. I wrote a simple method to compute the bounding sphere:
 <ul>
