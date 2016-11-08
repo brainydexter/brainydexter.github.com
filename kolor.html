@@ -22,8 +22,6 @@
 </head>
 <body>
 
-
-
 <header> 
 
 	<div class="container">
@@ -59,97 +57,79 @@
 		<!-- <img class="cover-photo" src="resources/imgs/wordsAway/wordsAway.png"> -->
 	</div>
 
-	<div class="ten columns">
-
-		<p>Kolor is my first 3D first-person shooter game developed only using C++ and OpenGL. The objective of the game is to gain dominance in the world by coloring other players to your own color. Players are on a team roster, represented by a master player. The mechanic enables the color of the team to be determined by the master's color. You can either Kolor(paint) all the slaves (players on the team) or just the master to get hold of the team. Once you "own", 70% of the slaves in the entire game, your team is declared victorious.</p>
-
-		<p>I did an initial prototype using C#-XNA to visualize if the game concept would be fun or not. Even though, I did not implement the AI, but the results were promising and the feedback further encouraged me to develop it into a complete game. Prototyping also helped me focus on game design and fleshing out the details of the game mechanic, early in the development phase. This came in handy since it helped me translate the design into game implementation. XNA takes care of a lot of details in the background, which forced me to dig down deep into the math involved and the backbone involved. This led me to adopt C++/OpenGL framework. I early on decided not to use a rendering or a physics engine like OGRE 3D/havok etc., because I wanted to learn in what goes into making a game and get some experience on various topics. However, this turned out to be a huge undertaking and I have been walking the fine line of not going over-the-board, yet customizing solutions to my needs given the time constraints and my limited experience in the field.</p>
-
-	</div>
-
 	<div class="six columns">
 		<iframe src="https://player.vimeo.com/video/12312013?portrait=0" width="100%" height="260" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 
-	<div class="twelve columns">
+	<div class="ten columns">
+
+		<p>Kolor is a first-person 3D shooter game developed using only C++ & OpenGL. The objective of the game is to gain dominance in the world by coloring other players to your own color. Players belong to a team, represented by a captain and his color. You can Kolor(paint) all the players on the team or just kolor the master to claim the team.</p>
+
+		<p>I built a prototype using C# & XNA to determine if the game would be fun. XNA takes care of a lot of details, which forced me to dig deeper into the math involved. This motivated me to adopt C++/OpenGL as the only tools. This turned out to be a huge undertaking. As a part of this, I implemented my own COLLADA DAE model library.</p>
 		<p>
 			These are the questions I came across in my journey so far:
-			<ul>
-			<li> <a href = "#3DModels">  How do I display those 3D models ?  </a> </li>
-			<li> <a href = "#MoveWorld">  How do I move in this world ?  </a> </li>
-			<li> <a href = "#Camera">  How do I make that First-Person View now ? (my own gluLookAt) </a> </li> 
-			<li> <a href = "#Input">  Separating Input into an entity in itself ?  </a> </li>
-			<li> <a href = "#Collision">  When Player and Bullet Collide ?  </a> </li>
-			<li> <a href = "#Architecture">  So what does the architecture look like ? </a> </li>
+			<ul class="circle">
+				<li> <a href = "#3DModels">  How do I display those 3D models ? </a> 
+				</li>
+				<li> <a href = "#MoveWorld">  How do I move in this world ? </a> 
+				</li>
+				<li> <a href = "#Camera">  How do I make that First-Person View now ? (my own gluLookAt) </a> </li> 
+				<li> <a href = "#Input">  Separating Input into an entity in itself ?  </a> </li>
+				<li> <a href = "#Collision">  When Player and Bullet Collide ?  </a> </li>
+				<li> <a href = "#Architecture">  So what does the architecture look like ? </a> </li>
 			</ul>
 			<hr>
-			</p>
+		</p>
+	</div>
+
+	<div class="twelve columns">
 			
 		<p>
-		 <a name="3DModels" class="question">How do I display those 3D models ? </a>
-		<br>
-		<ul>
-			<li> <a href="#LoadModel"> Loading DAE Model </a> </li>
-			<li> <a href="#RenderModel"> Rendering the Model </a> </li>
-		</ul>
+			<a name="3DModels">COLLADA DAE Model Library </a> <br>
 
-		As I began development, I quickly realised that I would need a way to load-in and render 3D models for players/weapons/world. I was then advised to use Collada DAE format since it is the industry standard. I had no experience with the inner details of file formats. Thus, I decided to write my own Collada importer. The Collada wiki and programmer's guide provided a good starting point and helped me understand how the models are internally organised in a Directed Acyclic Graph. Understanding the DAE format helped me understand the concept of indexing vertex attributes such as position, color, texture etc. Later on, it helped me see the one-to-one correspondence to OpenGL's concept of Vertex Buffer Object.
-		</p>
-
-		<p>
-			<a name="LoadModel" class="subQuestion">  Loading DAE Model </a>
-			<br>
-		During the process of implementing the Collada importer, I was required to store the inner DAG into my own format, translating DAE entities into my own classes. Since the Collada model is organised as a DAG, I was required to implement my own SceneGraph. Take a look at:
-		<ul>
-		 <li> VSceneGraph.h and VSceneGraph.cpp </li>
-		 <li> VSGNode.h and VSGNode.cpp </li>
-		 </ul>
-		 
-		Due to the extensive nature of the collada format that it can represent, I only implemented the subset that is required by the game. Uptil now, it supports the following:
-		<ul>
-		 <li> Scene Graph </li>
-		 <li> Model Mesh information (organised in a tree structure) stored by process the Geometry Node </li>
-		 <li> Node in scenegraph can have the following operations defined in DAE (VSGNode.h and VSGNode.cpp):
-			<ul>
-			<li> Lookat </li>
-			<li> Transformation defined by a 4x4 matrix </li>
-			<li> Translate along X / Y or Z axis </li>
-			<li> Rotation at a given angle about an arbitrary axis </li>
-			<li> Scale </li>
-			<li> Skew </li>
+			I needed a way to load & render 3D models for players/weapons/world. I was advised to use COLLADA DAE since it's the industry standard. I had to write my own Collada importer since there was no open source library at the time. I interpreted DAE's Directed Acyclic Graph into my own scene-graph. Take a look at:
+			<ul class="circle">
+				<li> VSceneGraph.h / cpp (DAE Model is accessed using this facade)</li>
+				<li> VSGNode.h / cpp </li>
+			</ul>	 
+			The collada format is very extensive so I only implemented the required subset. Uptil now, it supports the following:
+			<ul class="circle">
+				 <li> Scene Graph </li>
+				 <li> Model Mesh information (organised in a tree structure) </li>
+				 <li> Node in scenegraph can have the following operations defined in DAE (VSGNode.h / cpp):
+					<ul class="disc">
+						<li> Lookat </li>
+						<li> Transformation defined by a 4x4 matrix </li>
+						<li> Translate along X / Y or Z axis </li>
+						<li> Rotation at a given angle about an arbitrary axis </li>
+						<li> Scale / Skew </li>
+					</ul>
+				</li>
+				 <li> Primitives supported:
+					<ul class="disc">
+						<li> Triangle List </li>
+						<li> Polygon List </li>
+					</ul>
+				</li>
+				 <li> Vertex (.h) represents the heart of the model which stores data attributes as boost::hash_map { Semantic, (float*) } </li>
 			</ul>
-		</li>
-		 <li> Geometry associated can in-turn be made up of many different type of primitives. My importer supports:
-			<ul>
-			<li> Triangle List </li>
-			<li> Polygon List </li>
-			</ul>
-		</li>
-		 <li> At the heart of the model, resides the vertex (Vertex.h and Vertex.cpp) which stores data attributes as a boost::hash_map { Semantic, (float*) } </li>
-		</ul>
-		The facade with which the DAE Model is accessed is VSceneGraph.h and VSceneGraph.cpp wrapped around in Collada.h
-		</p>
-
-		<p>
-			<a name="RenderModel" class="subQuestion"> Rendering the Model </a>
-			<br>
-			Originally, I was using glBegin and glEnd to render the model. However, when I loaded in a model with higher poly count, the framerate crippled. After researching, I resorted to using Indexed Vertex Buffer Objects. For generating the indices for vertices, I run the list of vertices through a hash-map and assign a unique index for each vertex. This can be seen in the following code:
-			-- GeomMesh.cpp constructor and bool VertexExists(...)
-			
-			<br><br>
-			This smoothened out the model rendering FPS rate! These are some of the links I used to help me understand about VBOs:
-			- (insert bookmarks)
-		</p>
 			<a href="#Top"> Top </a>
-		<hr>
+		</p>
 
 		<p>
-		<a name="MoveWorld" class="question">
-		 How do I move in this world ?
-		</a>
+			<a name="RenderModel" > Indexed Vertex Buffer Objects </a>
+			<br>
+			Initially, I was using glBegin/glEnd to render models. However, when I loaded a high poly count model, the FPS crippled. I resorted to using Indexed Vertex Buffer Objects (VBOs) which helped FPS. For generating vertex indices, I ran the list of vertices through a hash-map and assign a unique index for each vertex. This can be seen in GeomMesh.cpp constructor and bool VertexExists(...).
+			<a href="#Top"> Top </a>
+		</p>		
+
+		<p>
+			<a name="MoveWorld">
+			 How do I move in this world ?
+			</a>
 		<br>
 			Once the model was rendered, I wanted to create a "player" who could move around in the world. I invited a ton of sub-problems for me with this! To begin with, I needed a mechanism to keep track of the player's position and orientation. This gave birth to FrameTransform. I used openGL superbible as my reference which made me use three vectors:
-			<ul>
+			<ul class="circle">
 			
 			<li> Origin </li>
 			<li> Up </li>
@@ -170,7 +150,7 @@
 		<hr>
 
 			<p>
-		<a name="Camera" class="question"> How do I make that First-Person View now ? (my own gluLookAt) </a>
+		<a name="Camera" > How do I make that First-Person View now ? (my own gluLookAt) </a>
 		<br> <br>
 		 I had a way to move the player around, but I wanted to get the First-person view! Essentially what this meant was, I needed to position world and everything else relative to player's coordinate system. So, one way was to move the world when player moves, giving the illusion that the player moves. Or, use the OpenGL transformation stack to transform everything as per player's Coordinate system. I chose the second approach and this is exactly what my Camera class does. It is a 'friend' of (Human)Player, since the camera is tightly coupled to the player. This is the documentation I wrote for the camera:
 		 
@@ -192,7 +172,7 @@
 		<br>
 		A first person camera helps to view the world from the player’s eyes. Thus, we need a transformation which enables the view from player’s reference. <br>
 		Example:
-		<ul>
+		<ul class="circle">
 		<li> WCS (0, 0)W  </li>
 		<li> PCS (2, 2)W => Player is at 2, 2 in the world coordinate system => PW<-P (2, 2)  </li>
 		<li> Chair P = (.5, .5)P  </li>
@@ -205,7 +185,7 @@
 		<br><br>
 		This way, everything is still specified in the WCS (given the Push/PopMatrix() style) and transformed to the Player’s view.
 		<br><br>
-		<a class="subQuestion"> Implementation </a>
+		<a > Implementation </a>
 		<br>
 		<pre style="font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%"><code>void Camera :: ApplyCameraTransform()
 		{
@@ -245,7 +225,7 @@
 		<hr>
 
 		<p>
-		<a name="Input" class="question">
+		<a name="Input" >
 		Separating Input into an entity in itself
 		</a>
 		<br><br>
@@ -261,7 +241,7 @@
 		<hr>
 
 		<p>
-		<a name="Collision" class="question">
+		<a name="Collision" >
 		 When player and bullet collide ?
 		 </a> 
 		 <br><br>
@@ -270,14 +250,14 @@
 			My experience with the prototype taught me that I would need some sort of broad-phase collision detection, since a O(n^2) operation was killing the framerate even with a meager number of players on the field firing bullets at each other. Thus, after some thought, I came up with this approach:
 			<br><br>
 			The involved actors are :-
-		<ul>
+		<ul class="circle">
 		<li> Players </li>
 		<li> Bullets(Fired) </li>
 		<li> Weapons (placed at points located throughout the level, which other players can pick up, aka static objects) </li>
 		<li> World </li>
 		</ul>
 		As of now, I am just trying to get the Players and bullet collision pairs.
-		<ul>
+		<ul class="circle">
 		<li>
 		Players: Players are represented by a bounding sphere, located at a position and moving with a velocity. Each player would have approximately the bounding sphere of same size. They can potentially collide with:<br> 
 		Players - weapons <br>
@@ -308,7 +288,7 @@
 		<br><br>
 		On each update frame, do the following:
 		<br>
-		<ul>
+		<ul class="circle">
 		<li>
 		For each player, find Cell(s); it is associated with :=> list< Cell* > PlayerCells
 		</li>
@@ -319,7 +299,7 @@
 
 		<li>
 		For each entity, the cell(s) can be found out based on the entity.
-		<ul>
+		<ul class="circle">
 		<li> Player: Bounding sphere :The grid size are uniformly sized cell (size, M) such that the M = 2R (R = radius of the bounding sphere). Thus, at any given time, at most the bounding sphere can be in contact with 4 cells. To determine the cells associated, find the 8 points for a given sphere (each at 45 degrees to the X,Y,Z axis along the 8 octants). (And then find out, in which grid cell does each of the point lie. This could at max return 4 cells).</li>
 
 		<li>Bullet: Segmented Ray with endpoints at : Posn and (Posn + vel). Thus, all the cells that the line passes through would yield the cells. </li>
@@ -348,7 +328,7 @@
 		After all the player and bullet–affected cells have been found, if we iterate through the hash-map, then it would yield all the possible pair of colliding players and bullets in a given cell. This can then be further handled using narrow-phase collision.
 			<br><br>
 		Once the broad-phase collision detection is working, narrow phase would be a Bounding-Sphere / Segment (Player/Bullet) collision check.  This required me to compute the bounding sphere for the given DAE model. I wrote a simple method to compute the bounding sphere:
-		<ul>
+		<ul class="circle">
 		 <li> Iterate through all the points on the model </li>
 		 <li> Keep a track of the minimum and the maximum point found so far </li>
 		 <li> Sphere radius = distance(minimumPt, maximumPt) * 0.5; </li>
@@ -362,7 +342,7 @@
 		<hr>
 
 		<p>
-		<a name="Architecture" class="question">
+		<a name="Architecture" >
 		So what does the architecture look like ?
 		 </a> 
 		 <br><br>
@@ -378,6 +358,8 @@
 		 Please see the attached code for more details.
 		</p>
 	</div>
+
+
 
 </div> <!-- page clearfix -->
 
