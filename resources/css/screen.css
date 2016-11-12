@@ -56,9 +56,9 @@ h3 {
 }
 
 .button {
-  background: none repeat scroll 0 0 #DD4A38;
-  border-radius: 3px;
-  color: #FFFFFF;
+  background: none repeat scroll 0 0 orange;
+  border-radius: 15px;
+  color: #000000;
   font-family: 'Arvo', serif;
   font-size: 20px;
   line-height: 22px;
@@ -71,7 +71,7 @@ h3 {
   border: none !important;
 }
 .button:hover {
-  color: #FFFFFF;
+  color: #000000;
   background: #CC4434;
 }
 
