@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>WordsAway | Priyank Jain </title>
+
+	<script src="https://use.fontawesome.com/21d3028b6a.js"></script>
+
+	<link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="resources/css/normalize.min.css">
+	<link rel="stylesheet" href="resources/css/base.css">
+	<link rel="stylesheet" href="resources/css/layout.css">
+	<link rel="stylesheet" href="resources/css/skeleton.css">
+	<link rel="stylesheet" href="resources/css/screen.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+
+
+
+<header> 
+
+	<div class="container">
+
+		<div class="navigation-inner clearfix">
+
+			<div class="seven columns">
+				<a href="index.html">
+					<div id="name"> Priyank Jain </div>
+					<div id="title"> Bringing Ideas to life </div>
+				</a>
+			</div>
+
+			<div class="nine columns">
+				<ul class="menu primary-menu clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</div> 
+
+		</div>
+
+	</div>
+
+</header>
+
+<div class="container">
+
+<div class="page clearfix">
+
+	<div class="sixteen columns">
+		<h2> WordsAway - 2016 </h2>
+		<!-- <img class="cover-photo" src="resources/imgs/wordsAway/wordsAway.png"> -->
+	</div>
+
+	<div class="ten columns">
+
+		<p> WordsAway is a game I developed using Unity C# for the iOS. The game offers multiple levels with a three star system. The core game mechanic is to clear words by connecting adjacent letters on the board. Player wins the game by clearing the set challenge or is defeated if the letters tower up.</p>
+
+		<p>Here are some of the things I worked on: 
+			<ul class="circle">
+			    <li>
+			        <a href="https://github.com/brainydexter/PublicCode/blob/master/common/EventAggregator.cs">Event aggregator for decoupling publishers and event subscribers</a>
+			        <!-- <ul>
+			            <li>avoid module dependencies</li>
+			            <li>compile time issues with generics</li>
+			            <li>processing all subscribers at once</li>
+			        </ul> -->
+			    </li>
+			    <li>Greedy object pool where objects are dynamically allocated with a tight fit</li>
+			    <li> Offers multiple levels which can be independently customized
+			    	<ul>
+			    		<li> Implemented designer friendly level editor </li>
+			    		<!-- <li> Generic interface which specifc boards can implement </li>
+			    		<li> Board can register for whatever event they are interested in</li>
+			    		<li> Board is responsible for publishing board over event populated with whatever relevant details</li> -->
+			    	</ul>
+			    </li>
+			    <li> Player Assist which helps players to catch up (weighted random probabiblity)</li>
+			    <li>
+			        <a href="https://github.com/brainydexter/PublicCode/blob/master/common/TrieNode.cs">Implemented tool to prune word list and built trie optimized for space</a>
+			        <!-- <ul>
+			            <li>stats</li>
+			            <li>wrote utility with knobs to prune english dictionary : 3 - 7 letter words</li>
+			        </ul> -->
+			    </li>
+			    <li>Procedurally generated letters, powerups and score multipliers. Letter state is updated on the fly using vertex shaders thereby sharing 1 materials across & have all of them rendered in 1 draw call</li>
+			    <li>Users can swipe diagonally also to form words</li>
+			    <!-- <ul>
+			        <li>Active word manager for managing&nbsp;letters while word is being formed</li>
+			        <li>originally implemented tap to submit and transitioned to swipe based on user feedback</li>
+			        <li>Tuning the drag threshold</li>
+			    </ul> -->
+			    <li>
+			        Extensible infrastructure supports adding new powerups easily
+			        <!-- <ul>
+			            <li>cyclic conveyor belt effect for alongwith object pooling</li>
+			            <li>coroutines to handle&nbsp;powerup effect</li>
+			            <li>Drag&amp;Drop behavior at runtime</li>
+			            <li>Rocket has an oscillating behavior with tuning parameters of amplitude/speed</li>
+			        </ul> -->
+			    </li>
+			    <li>
+			        Menu navigation by dynamically managing unity scenes
+			        <ul>
+			            <li>Replaying&nbsp;game through menu system results in no memory leaks</li>
+			            <!-- <li>coroutines for menu change</li> -->
+			            <li> Designers could independently design screens</li>
+			        </ul>
+			    </li>
+			    <!-- <li>
+			        Gameplay<br />
+			        <ul>
+			            <li><a href="https://github.com/brainydexter/PublicCode/blob/master/unity/BlocksManager.cs"> Sharing 1 material across all blocks to avoid extra draw calls</a></li>
+			            <li>Sharing 1 material across all powerups&nbsp;to avoid extra draw calls</li>
+			            <li>Managing falling block, board with generic methods, powerups</li>
+			            <li>Letter block selection state</li>
+			            <li>setup scoring for words</li>
+			        </ul>
+			    </li> -->
+			    
+			    <!-- <li>unity meta hell</li>
+			    <li>
+			        Automating build for android
+			        <ul>
+			            <li>commandline build for android</li>
+			            <li>upload to google drive</li>
+			            <li>easy to distribute to testers</li>
+			        </ul>
+			    </li> -->
+
+			    <!-- <li>
+			    	Component Managers
+			    	<ul>
+			    		<li>Implementing generic audio, powerup, animation unity components&nbsp;which enabled the designers to associate the FX to event type</li>
+			    		<li>Animation managers support generic gameobject prefabs which are expected to get disabled at the end of their lifecycle </li>
+			    	</ul>
+			    
+			    </li> -->
+			</ul>
+		</p>
+
+	</div>
+
+	<div class="six columns">
+		<iframe src="https://player.vimeo.com/video/177944675" width="100%" height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+
+</div> <!-- page clearfix -->
+
+
+</div>
+
+
+<footer>
+
+	<div class="container">
+
+		<div class="footer-inner">
+
+			<div class="icons">
+				<span class="icon"> <a href="http://twitter.com/brainydexter">  <i class="fa fa-twitter"></i> </a> </span>
+				<span class="icon"> <a href="http://www.linkedin.com/in/brainydexter"> <i class="fa fa-linkedin"></i> </a></span>
+				<span class="icon"> <a href="http://github.com/brainydexter"> <i class="fa fa-github"></i> </a></span>
+				<span class="icon"> <a href="mailto:fly2priyank@gmail.com"> <i class="fa fa-envelope"></i> </a></span>
+			</div>
+
+			<div class="copyright">&copy; Priyank Jain</div> 
+
+		</div>
+
+	</div>
+
+</footer>
+
+
+
+
+
+</body>
+</html>
