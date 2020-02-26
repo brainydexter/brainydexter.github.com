@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="QtOpenGL"
+	ProjectGUID="{C21C4837-8067-3EF0-825F-2FC2C9448EE5}"
+	Keyword="Qt4VSv1.0">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="tmp\obj\debug_shared\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\include\QtCore&quot;,&quot;..\..\include\QtGui&quot;,&quot;..\..\include&quot;,&quot;..\..\include\QtOpenGL&quot;,&quot;tmp\rcc\debug_shared&quot;,&quot;tmp&quot;,&quot;..\3rdparty\harfbuzz\src&quot;,&quot;..\..\include\ActiveQt&quot;,&quot;tmp\moc\debug_shared&quot;,..\..\mkspecs\win32-msvc2008"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="tmp\obj\debug_shared\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="3"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="tmp\obj\debug_shared\"
+				Optimization ="4"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_BUILD_OPENGL_LIB,QT_NO_USING_NAMESPACE,QT_MAKEDLL,QT_NO_CAST_TO_ASCII,QT_ASCII_CAST_WARNINGS,QT_MOC_COMPAT,_USE_MATH_DEFINES,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_SHARED,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="3"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opengl32.lib glu32.lib gdi32.lib user32.lib c:\Qt\4.6.0-vc\qt\lib\QtGuid4.lib c:\Qt\4.6.0-vc\qt\lib\QtCored4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.6.0-vc\qt\lib,c:\Qt\4.6.0-vc\qt\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				BaseAddress="0x63000000"
+				GenerateDebugInformation="true"
+				IgnoreImportLibrary="true"
+				LinkTimeCodeGeneration="0"
+				OutputFile="..\..\lib\QtOpenGLd4.dll"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true"
+				Version="4.60"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\bin&quot;"
+				Description="Copy QtOpenGLd4.dll to ..\..\bin"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_BUILD_OPENGL_LIB,QT_NO_USING_NAMESPACE,QT_MAKEDLL,QT_NO_CAST_TO_ASCII,QT_ASCII_CAST_WARNINGS,QT_MOC_COMPAT,_USE_MATH_DEFINES,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_SHARED,QT_THREAD_SUPPORT,_DEBUG"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			ConfigurationType="2"
+			IntermediateDirectory="tmp\obj\release_shared\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;..\..\include\QtCore&quot;,&quot;..\..\include\QtGui&quot;,&quot;..\..\include&quot;,&quot;..\..\include\QtOpenGL&quot;,&quot;tmp\rcc\debug_shared&quot;,&quot;tmp&quot;,&quot;..\3rdparty\harfbuzz\src&quot;,&quot;..\..\include\ActiveQt&quot;,&quot;tmp\moc\release_shared&quot;,..\..\mkspecs\win32-msvc2008"
+				AdditionalOptions="-Zm200 -w34100 -w34189 -w34100 -w34189"
+				AssemblerListingLocation="tmp\obj\release_shared\"
+				BufferSecurityCheck="false"
+				DebugInformationFormat="0"
+				ExceptionHandling="1"
+				GeneratePreprocessedFile="0"
+				ObjectFile="tmp\obj\release_shared\"
+				Optimization ="2"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_BUILD_OPENGL_LIB,QT_NO_USING_NAMESPACE,QT_MAKEDLL,QT_NO_CAST_TO_ASCII,QT_ASCII_CAST_WARNINGS,QT_MOC_COMPAT,_USE_MATH_DEFINES,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_SHARED,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				RuntimeTypeInfo="true"
+				SuppressStartupBanner="true"
+				TreatWChar_tAsBuiltInType="false"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="opengl32.lib glu32.lib gdi32.lib user32.lib c:\Qt\4.6.0-vc\qt\lib\QtGui4.lib c:\Qt\4.6.0-vc\qt\lib\QtCore4.lib"
+				AdditionalLibraryDirectories="c:\Qt\4.6.0-vc\qt\lib,c:\Qt\4.6.0-vc\qt\lib"
+				AdditionalOptions="&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot;"
+				BaseAddress="0x63000000"
+				GenerateDebugInformation="false"
+				IgnoreImportLibrary="true"
+				LinkIncremental="1"
+				LinkTimeCodeGeneration="0"
+				OutputFile="..\..\lib\QtOpenGL4.dll"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="true"
+				Version="4.60"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="copy  &quot;$(TargetPath)&quot; &quot;..\..\bin&quot;"
+				Description="Copy QtOpenGL4.dll to ..\..\bin"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_BUILD_OPENGL_LIB,QT_NO_USING_NAMESPACE,QT_MAKEDLL,QT_NO_CAST_TO_ASCII,QT_ASCII_CAST_WARNINGS,QT_MOC_COMPAT,_USE_MATH_DEFINES,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_SHARED,QT_THREAD_SUPPORT"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath="qgl.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qgl2pexvertexarray.cpp"/>
+			<File
+				RelativePath="qgl_win.cpp"/>
+			<File
+				RelativePath="qglcolormap.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qglcustomshaderstage.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qglengineshadermanager.cpp"/>
+			<File
+				RelativePath="qglextensions.cpp"/>
+			<File
+				RelativePath="qglframebufferobject.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qglgradientcache.cpp"/>
+			<File
+				RelativePath="qglpaintdevice.cpp"/>
+			<File
+				RelativePath="qglpixelbuffer.cpp"/>
+			<File
+				RelativePath="qglpixelbuffer_win.cpp"/>
+			<File
+				RelativePath="qglpixmapfilter.cpp"/>
+			<File
+				RelativePath="qglshaderprogram.cpp"/>
+			<File
+				RelativePath="qgraphicsshadereffect.cpp"/>
+			<File
+				RelativePath="qgraphicssystem_gl.cpp"/>
+			<File
+				RelativePath="qpaintengine_opengl.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qpaintengineex_opengl2.cpp"/>
+			<File
+				RelativePath="qpixmapdata_gl.cpp"/>
+			<File
+				RelativePath="gl2paintengineex\qtriangulatingstroker.cpp"/>
+			<File
+				RelativePath="qwindowsurface_gl.cpp"/>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath="qgl.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgl.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgl.h -o tmp\moc\debug_shared\moc_qgl.cpp"
+						Description="MOC qgl.h"
+						Outputs="tmp\moc\debug_shared\moc_qgl.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgl.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgl.h -o tmp\moc\release_shared\moc_qgl.cpp"
+						Description="MOC qgl.h"
+						Outputs="tmp\moc\release_shared\moc_qgl.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="gl2paintengineex\qgl2pexvertexarray_p.h"/>
+			<File
+				RelativePath="qgl_p.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgl_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgl_p.h -o tmp\moc\debug_shared\moc_qgl_p.cpp"
+						Description="MOC qgl_p.h"
+						Outputs="tmp\moc\debug_shared\moc_qgl_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgl_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgl_p.h -o tmp\moc\release_shared\moc_qgl_p.cpp"
+						Description="MOC qgl_p.h"
+						Outputs="tmp\moc\release_shared\moc_qgl_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="qglcolormap.h"/>
+			<File
+				RelativePath="gl2paintengineex\qglcustomshaderstage_p.h"/>
+			<File
+				RelativePath="gl2paintengineex\qglengineshadermanager_p.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;gl2paintengineex\qglengineshadermanager_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 gl2paintengineex\qglengineshadermanager_p.h -o tmp\moc\debug_shared\moc_qglengineshadermanager_p.cpp"
+						Description="MOC gl2paintengineex\qglengineshadermanager_p.h"
+						Outputs="tmp\moc\debug_shared\moc_qglengineshadermanager_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;gl2paintengineex\qglengineshadermanager_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 gl2paintengineex\qglengineshadermanager_p.h -o tmp\moc\release_shared\moc_qglengineshadermanager_p.cpp"
+						Description="MOC gl2paintengineex\qglengineshadermanager_p.h"
+						Outputs="tmp\moc\release_shared\moc_qglengineshadermanager_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="gl2paintengineex\qglengineshadersource_p.h"/>
+			<File
+				RelativePath="qglextensions_p.h"/>
+			<File
+				RelativePath="qglframebufferobject.h"/>
+			<File
+				RelativePath="qglframebufferobject_p.h"/>
+			<File
+				RelativePath="gl2paintengineex\qglgradientcache_p.h"/>
+			<File
+				RelativePath="qglpaintdevice_p.h"/>
+			<File
+				RelativePath="qglpixelbuffer.h"/>
+			<File
+				RelativePath="qglpixelbuffer_p.h"/>
+			<File
+				RelativePath="qglpixmapfilter_p.h"/>
+			<File
+				RelativePath="qglshaderprogram.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qglshaderprogram.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qglshaderprogram.h -o tmp\moc\debug_shared\moc_qglshaderprogram.cpp"
+						Description="MOC qglshaderprogram.h"
+						Outputs="tmp\moc\debug_shared\moc_qglshaderprogram.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qglshaderprogram.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qglshaderprogram.h -o tmp\moc\release_shared\moc_qglshaderprogram.cpp"
+						Description="MOC qglshaderprogram.h"
+						Outputs="tmp\moc\release_shared\moc_qglshaderprogram.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="qgraphicsshadereffect_p.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgraphicsshadereffect_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgraphicsshadereffect_p.h -o tmp\moc\debug_shared\moc_qgraphicsshadereffect_p.cpp"
+						Description="MOC qgraphicsshadereffect_p.h"
+						Outputs="tmp\moc\debug_shared\moc_qgraphicsshadereffect_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qgraphicsshadereffect_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qgraphicsshadereffect_p.h -o tmp\moc\release_shared\moc_qgraphicsshadereffect_p.cpp"
+						Description="MOC qgraphicsshadereffect_p.h"
+						Outputs="tmp\moc\release_shared\moc_qgraphicsshadereffect_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="qgraphicssystem_gl_p.h"/>
+			<File
+				RelativePath="qpaintengine_opengl_p.h"/>
+			<File
+				RelativePath="gl2paintengineex\qpaintengineex_opengl2_p.h"/>
+			<File
+				RelativePath="qpixmapdata_gl_p.h"/>
+			<File
+				RelativePath="gl2paintengineex\qtriangulatingstroker_p.h"/>
+			<File
+				RelativePath="qwindowsurface_gl_p.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qwindowsurface_gl_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qwindowsurface_gl_p.h -o tmp\moc\debug_shared\moc_qwindowsurface_gl_p.cpp"
+						Description="MOC qwindowsurface_gl_p.h"
+						Outputs="tmp\moc\debug_shared\moc_qwindowsurface_gl_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qwindowsurface_gl_p.h"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qwindowsurface_gl_p.h -o tmp\moc\release_shared\moc_qwindowsurface_gl_p.cpp"
+						Description="MOC qwindowsurface_gl_p.h"
+						Outputs="tmp\moc\release_shared\moc_qwindowsurface_gl_p.cpp"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated Files"
+			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
+			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
+			<File
+				RelativePath="tmp\obj\release_shared\QtOpenGL_resource.res">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\obj\debug_shared\QtOpenGLd_resource.res">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qgl.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qgl.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qgl_p.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qgl_p.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qglengineshadermanager_p.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qglengineshadermanager_p.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qglshaderprogram.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qglshaderprogram.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qgraphicsshadereffect_p.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qgraphicsshadereffect_p.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\moc_qwindowsurface_gl_p.cpp">
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\moc_qwindowsurface_gl_p.cpp">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\qpaintengine_opengl.moc">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qpaintengine_opengl.cpp"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qpaintengine_opengl.cpp -o tmp\moc\debug_shared\qpaintengine_opengl.moc"
+						Description="MOC qpaintengine_opengl.cpp"
+						Outputs="tmp\moc\debug_shared\qpaintengine_opengl.moc"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\qpaintengine_opengl.moc">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;qpaintengine_opengl.cpp"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 qpaintengine_opengl.cpp -o tmp\moc\release_shared\qpaintengine_opengl.moc"
+						Description="MOC qpaintengine_opengl.cpp"
+						Outputs="tmp\moc\release_shared\qpaintengine_opengl.moc"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tmp\moc\debug_shared\qpaintengineex_opengl2.moc">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;gl2paintengineex\qpaintengineex_opengl2.cpp"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\debug_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 gl2paintengineex\qpaintengineex_opengl2.cpp -o tmp\moc\debug_shared\qpaintengineex_opengl2.moc"
+						Description="MOC gl2paintengineex\qpaintengineex_opengl2.cpp"
+						Outputs="tmp\moc\debug_shared\qpaintengineex_opengl2.moc"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					ExcludedFromBuild="true"/>
+			</File>
+			<File
+				RelativePath="tmp\moc\release_shared\qpaintengineex_opengl2.moc">
+				<FileConfiguration
+					Name="Debug|Win32"
+					ExcludedFromBuild="true"/>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						AdditionalDependencies="C:\Qt\4.6.0-vc\qt\bin\moc.exe;gl2paintengineex\qpaintengineex_opengl2.cpp"
+						CommandLine="C:\Qt\4.6.0-vc\qt\bin\moc.exe  -DQT_SHARED -DQT_THREAD_SUPPORT -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_BUILD_OPENGL_LIB -DQT_NO_USING_NAMESPACE -DQT_MAKEDLL -DQT_NO_CAST_TO_ASCII -DQT_ASCII_CAST_WARNINGS -DQT_MOC_COMPAT -D_USE_MATH_DEFINES -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -I&quot;..\..\include\QtCore&quot; -I&quot;..\..\include\QtGui&quot; -I&quot;..\..\include&quot; -I&quot;..\..\include\QtOpenGL&quot; -I&quot;tmp\rcc\debug_shared&quot; -I&quot;tmp&quot; -I&quot;..\3rdparty\harfbuzz\src&quot; -I&quot;..\..\include\ActiveQt&quot; -I&quot;tmp\moc\release_shared&quot; -I..\..\mkspecs\win32-msvc2008 -D_MSC_VER=1500 -DWIN32 gl2paintengineex\qpaintengineex_opengl2.cpp -o tmp\moc\release_shared\qpaintengineex_opengl2.moc"
+						Description="MOC gl2paintengineex\qpaintengineex_opengl2.cpp"
+						Outputs="tmp\moc\release_shared\qpaintengineex_opengl2.moc"
+						Path="c:\Qt\4.6.0-vc\qt\bin"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<File
+			RelativePath="c:\Qt\4.6.0-vc\qt\src\opengl\QtOpenGL_resource.rc">
+			<FileConfiguration
+				Name="Debug|Win32"
+				ExcludedFromBuild="true"/>
+		</File>
+		<File
+			RelativePath="c:\Qt\4.6.0-vc\qt\src\opengl\QtOpenGLd_resource.rc">
+			<FileConfiguration
+				Name="Release|Win32"
+				ExcludedFromBuild="true"/>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
